@@ -22,8 +22,7 @@ public class Library {
         this.rackList = rackList;
     }
 
-    public Library(String libraryId, List<Rack> rackList) {
+    public Library(String libraryId) {
         this.libraryId = libraryId;
-        this.rackList = rackList;
     }
 }

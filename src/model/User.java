@@ -31,9 +31,7 @@ public class User {
         this.borrowedCopyIdList = borrowedCopyIdList;
     }
 
-    public User(String userId, String userName, List<String> borrowedCopyIdList) {
+    public User(String userId) {
         this.userId = userId;
-        this.userName = userName;
-        this.borrowedCopyIdList = borrowedCopyIdList;
     }
 }
