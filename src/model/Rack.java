@@ -1,14 +1,20 @@
 package model;
 import java.util.*;
 public class Rack {
-    private String rackId;
+    private Integer rackId;
     private List<Book> bookList;
+    Integer rackCapacity;
 
-    public String getRackId() {
+    public Rack(Integer rackId, Integer rackCapacity) {
+        this.rackId = rackId;
+        this.rackCapacity=rackCapacity;
+    }
+
+    public Integer getRackId() {
         return rackId;
     }
 
-    public void setRackId(String rackId) {
+    public void setRackId(Integer rackId) {
         this.rackId = rackId;
     }
 
@@ -20,8 +26,11 @@ public class Rack {
         this.bookList = bookList;
     }
 
-    public Rack(String rackId, List<Book> bookList) {
-        this.rackId = rackId;
-        this.bookList = bookList;
+    public Integer getRackCapacity() {
+        return rackCapacity;
+    }
+
+    public void setRackCapacity(Integer rackCapacity) {
+        this.rackCapacity = rackCapacity;
     }
 }
